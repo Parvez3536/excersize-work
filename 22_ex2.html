@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex-2</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background:linear-gradient(135deg, #1e3c72, #2a5298);
+            align-items: center;
+            justify-content: center;
+             display: flex;
+             height: 100vh;
+        }
+      
+        .form-box h1{
+            color: palegreen;
+                margin-bottom: 20px;
+                justify-content: center;
+                align-items: center;
+        
+        }
+        input{
+         margin: 10px 0;
+            
+        }
+        /*glass card*/
+        .form-box{
+            width: 350px;
+            padding: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            text-align: center;
+            align-items: center;
+
+        }
+        .form-box input{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #00c6ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover{
+            background: #0072ff;
+        }
+        input:focus{
+            border: 1px solid rgba(13, 131, 167, 0.5);
+            box-shadow: 0 8px 32px rgba(26, 245, 172, 0.3);
+            color: rgb(38, 211, 75);
+        }
+        /*animation*/
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-15px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="form-box">
+        <h1>Create Account</h1>
+        <input type="text" required placeholder="your name">
+        <input type="text" required placeholder="Enter Your Email">
+        <input type="password" required placeholder="Enter Your Password">
+       <input type="password" required placeholder="Repeat Your Password">
+    <button>Register</button>
+    </div>
+
+</body>
+</html>
